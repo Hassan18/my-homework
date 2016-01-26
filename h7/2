@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Rules</title>
+    <style type="text/css">
+        body {
+            font-size: 25px;
+        }
+
+        div {
+            border: 1px solid red;
+            background-color: white;
+        }
+
+        .parent {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            height: 600px;
+            width: 700px;
+        }
+
+        .absolute-scroll {
+            position: absolute;
+            left: 120px;
+            top: 130px;
+            height: 450px;
+            width: 500px;
+            overflow: scroll;
+        }
+
+        .absolute-inner {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="absolute-scroll">
+            absolute positioned, scrolled<br />
+            width and height are specified by css<br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <div class="absolute-inner">absolute positioned</div>
+        </div>
+    </div>
+    <br /><br /><br /><br />
+    notice this text!<br />
+    in code appears <br />
+    after the divs<br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/" title="css positioning">Link to very good demonstration of positioning and floating</a><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    Some text to make the browser show scrollers
+</body>
+</html>
